@@ -1,8 +1,27 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#000000"><title>Gravitar VR</title>  <script type="module" crossorigin src="./assets/index-BiSsgQhw.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-Dev8qCEi.css">
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#08090b"><title>Gravitar VR</title>  <script type="module" crossorigin src="./assets/index-Delf7yl_.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Da-9G4oy.css">
 </head>
-<body><canvas id="game" aria-label="Gravitar Diorama 3D"></canvas>
-<main id="landing"><h1>GRAVITAR <span>VR</span></h1><p>The original arcade campaign in Diorama 3D.</p>
-<button id="play" disabled>Play in VR</button><p id="status" role="status">Checking headset…</p>
-<p class="controls"><strong>A</strong> start / pause · <strong>X</strong> restart<br>Left stick turns · right trigger thrusts<br>Right grip fires · <strong>B</strong> shields<br>Left grip recentres</p></main></body></html>
+<body>
+<canvas id="game" aria-label="Gravitar Diorama 3D"></canvas>
+<main id="landing">
+  <div class="cabinet">
+    <div class="cabinet-front">
+      <header class="marquee" aria-label="Gravitar"><span class="marquee-fallback">GRAVITAR</span></header>
+      <section class="bezel" aria-label="Gravitar VR arcade">
+        <div class="monitor">
+          <h1 class="sr-only">Gravitar VR</h1>
+          <svg id="vector-logo" viewBox="-190 -175 380 185" role="img" aria-label="Gravitar"></svg>
+          <div class="controls" aria-label="Quest controller guide">
+            <div><span class="hand">LEFT HAND</span><p><strong>Stick ← →</strong><span class="binding">Rotate</span></p><p><strong>X</strong><span class="binding">Pause / resume</span></p><p><strong>Grip</strong><span class="binding">Recenter</span></p></div>
+            <div><span class="hand">RIGHT HAND</span><p><strong>Index trigger</strong><span class="binding">Thrust</span></p><p><strong>Grip</strong><span class="binding">Fire</span></p><p><strong>B</strong><span class="binding">Shield / tractor</span></p></div>
+          </div>
+          <button id="play" data-vector-text disabled>CLICK TO ENTER VR</button>
+          <p id="status" role="status"></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+</body></html>
